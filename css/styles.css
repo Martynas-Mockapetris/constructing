@@ -1,0 +1,311 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+/*
+###################
+##    DEFAULT    ##
+###################
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	position: relative;
+	background-color: #333333;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 960px;
+	height: auto;
+}
+
+h2, h4, a, .titleDefault, .titleMainPage, 
+#quoteAuthor {
+	font-family: 'Pacifico', cursive;
+}
+
+p, input, textarea, #credits {
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 0.1px;
+	text-align: justify;
+}
+
+p, input, textarea, #credits,
+h2, h4, a, .titleDefault, 
+#quoteAuthor, .contacts, .titleMainPage {
+	text-shadow: 1px 1px #000000;
+}
+
+.titleDefault {
+	height: 65px;
+	margin-top: 10px;
+	text-align: center;
+	color: #E05151;
+}
+
+h2, h4 {
+	margin: 15px;
+	color: #E05151;
+	text-align: center;
+}
+
+h2, h4 {
+	height: 30px;
+}
+
+h4 {
+	padding-top: 10px;
+}
+
+a, a:hover, a:visited, a:link {
+	color: #F2F2F3;
+	text-decoration: none;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #F2F2F3;
+}
+
+/*
+########################
+###      HEADER      ###
+########################
+*/
+.navbar, .containerNav {
+	width: 100%;
+}
+
+.navbar-brand {
+	position: relative;
+	left: 30px;
+	width: 150px;
+	height: 40px;
+	top: 20px;
+}
+
+.navbar-default {
+	background-color: #333333;
+	border: 0;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #F2F2F3;
+	transition: color 1s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #E05151;
+	transition: color 1s ease;
+}
+
+.navbar-nav, .navbar-toggle {
+	margin-top: 12px;
+}
+
+.navbar-nav {
+	border-top: 1px solid #F2F2F3;
+	border-bottom:  1px solid #F2F2F3;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {	
+	background-color: #333333;
+	border-color: #333333;
+}
+/*
+########################
+###      CONTENT     ###
+########################
+*/
+#borderTitleLines {
+	width: 100%;
+	margin: 0 auto;
+	border-top: 1px solid #F2F2F3;
+	border-bottom: 1px solid #F2F2F3;
+}
+
+.titleMainPage {
+	height: 80px;
+	margin-top: 10px;
+	text-align: center;
+	color: #E05151;
+}
+
+#quoteAuthor {
+	font-size: 18px;
+	text-align: right;
+	margin-right: 145px;
+	margin-top: 5px;
+}
+
+.content {
+	margin: 10px auto;
+	padding-bottom: 30px;
+}
+
+.firstRow p, .secondRow p {
+	color: #F2F2F3;
+	position: relative;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.firstRow:last-child p {
+	margin-bottom: 0px;
+}
+
+.firstRow img {
+	width: 100%;
+	max-height: 100px;
+	overflow: hidden;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 8px;
+}
+
+.secondRow .ads {
+	width: 88%;
+	height: 200px;
+	margin-left: 6%;
+	background-color: #000000;
+}
+
+/*
+########################
+###      FOOTER      ###
+########################
+*/
+
+.footer {
+	clear: both;
+	width: 100%;
+	height: 35px;
+	background: #202020;
+	color: #F2F2F3;
+}
+
+.footer p {
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+.fixedFooter {
+	position: absolute;
+	bottom: 0;
+}
+
+/*
+########################
+###    RESPONSIVE    ###
+########################
+*/
+
+@media (max-width: 768px) {
+ 	.container {
+ 		width: 100%;
+	}
+
+	.navbar-brand {
+		margin-top: -15px;
+		padding-left: 30px;
+	}
+
+	.navbar-toggle {
+		padding-right: 30px;
+	}
+
+	.containerNav {
+		width: 100%;
+	}
+
+ 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #f2f2f3;
+	}
+
+	.navbar-nav {
+		border: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navbar-nav > li > a {
+		margin: 2px;
+		text-align: center;
+		border-radius: 2px;
+	}
+
+	.navbar-nav > li:first-child > a {
+		margin-top: 15px;
+	}
+
+	.navbar-nav > li > a:link {
+		background: #202020;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #f2f2f3;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #f2f2f3;
+		background-color: #333333;
+	}
+
+	.navbar-collapse {
+		border-top: none;
+	}
+
+	.container {
+		z-index: 1;
+	}
+
+	#borderTitleLines {
+		width: 100%;
+	}
+
+	.titleDefault {
+		height: 50px;
+	}
+
+	.titleMainPage {
+		height: 60px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	#quoteAuthor {
+		margin-right: 110px;
+	}
+
+	h2, h4 {
+		font-size: 28px;
+	}
+
+	h2 {
+		padding-top: 7px;
+	}
+
+	.firstRow p, .secondRow p {
+		font-size: 14px;
+	}
+
+	.fixedFooterMob {
+		position: relative;
+	}
+}
